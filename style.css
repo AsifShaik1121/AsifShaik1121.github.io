@@ -51,12 +51,12 @@
   }
   
   .logo .nav-photo {
-    width: 40px;   /* small size */
-    height: 40px;
+    width: 60px;   /* small size */
+    height: 60px;
     border-radius: 50%;   /* makes it round */
     object-fit: cover;    /* no distortion */
     border: 2px solid #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   }
   
   
