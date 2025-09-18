@@ -31,7 +31,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       document.body.classList.add("dark-mode");
       toggleBtn.textContent = "☀️";
     }
-  });
+    loadRepos();
+});
 
   // Replace with your GitHub username
 const GITHUB_USERNAME = "AsifShaik1121";
