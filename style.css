@@ -1,0 +1,148 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex; justify-content: space-between;
+    align-items: center;
+    background: #222; color: #fff;
+    padding: 1rem 2rem;
+    position: sticky; top: 0;
+  }
+  nav .logo { font-size: 1.5rem; font-weight: bold; }
+  nav .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+  nav .nav-links a { color: #fff; text-decoration: none; transition: 0.3s; }
+  nav .nav-links a:hover { color: #ff9800; }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(120deg, #ff9800, #f44336);
+    color: white;
+  }
+  .hero h1 span { color: #222; background: #fff; padding: 0 10px; border-radius: 6px; }
+  .hero .btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #222; color: #fff;
+    border-radius: 5px; text-decoration: none;
+  }
+  .hero .btn:hover { background: #444; }
+  
+  /* Sections */
+  .section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .section h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #f44336;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .skill {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Projects */
+  .project-card {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Contact */
+  #contact p { text-align: center; margin: 0.5rem 0; }
+  #contact a { color: #f44336; text-decoration: none; }
+  #contact a:hover { text-decoration: underline; }
+
+  /* Dark Mode Button */
+#theme-toggle {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #theme-toggle:hover {
+    background: #666;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background: #121212;
+    color: #eaeaea;
+  }
+  
+  .dark-mode nav {
+    background: #111;
+  }
+  
+  .dark-mode .hero {
+    background: linear-gradient(120deg, #333, #111);
+    color: #eaeaea;
+  }
+  
+  .dark-mode .hero h1 span {
+    background: #222;
+    color: #f44336;
+  }
+  
+  .dark-mode .btn {
+    background: #f44336;
+    color: #fff;
+  }
+  
+  .dark-mode .btn:hover {
+    background: #ff9800;
+  }
+  
+  .dark-mode .skill,
+  .dark-mode .project-card {
+    background: #1e1e1e;
+    color: #eaeaea;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.05);
+  }
+  
+  .dark-mode footer {
+    background: #111;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
