@@ -40,39 +40,24 @@
   }
   .hero .btn:hover { background: #444; }
 
-  /* Fade-in animation */
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  /* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    gap: 0.6rem; /* space between image and text */
+    color: #fff;
   }
   
-  .hero-photo img {
-    width: 120px;          /* smaller size */
-    height: 120px;         /* keep it equal for round shape */
-    border-radius: 50%;    /* makes it round */
-    object-fit: cover;     /* ensures it doesn’t stretch */
-    border: 3px solid #fff;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
-    opacity: 0;            /* for fade-in */
-    transform: translateY(20px);
-    transition: transform 0.3s, box-shadow 0.3s;
+  .logo .nav-photo {
+    width: 40px;   /* small size */
+    height: 40px;
+    border-radius: 50%;   /* makes it round */
+    object-fit: cover;    /* no distortion */
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
-  
-  .hero-photo img.visible {
-    animation: fadeInUp 1s ease-out forwards;
-  }
-  
-  .hero-photo img:hover {
-    transform: scale(1.08); /* slightly larger on hover */
-    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-  }
-  
   
   
   /* Sections */
