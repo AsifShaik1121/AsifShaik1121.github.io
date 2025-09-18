@@ -39,6 +39,40 @@
     border-radius: 5px; text-decoration: none;
   }
   .hero .btn:hover { background: #444; }
+
+  /* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    opacity: 0; /* start hidden */
+    transform: translateY(30px);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .hero-photo img.visible {
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+  
+  .hero-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+  
   
   /* Sections */
   .section {

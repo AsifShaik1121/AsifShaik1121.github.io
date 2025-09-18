@@ -12,14 +12,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
   
-    // Change icon
-    if (document.body.classList.contains("dark-mode")) {
-      toggleBtn.textContent = "☀️"; // Sun for light mode
-    } else {
-      toggleBtn.textContent = "🌙"; // Moon for dark mode
-    }
+    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
   
-    // Save preference in local storage
     localStorage.setItem("theme", 
       document.body.classList.contains("dark-mode") ? "dark" : "light"
     );
@@ -30,6 +24,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (localStorage.getItem("theme") === "dark") {
       document.body.classList.add("dark-mode");
       toggleBtn.textContent = "☀️";
+    }
+  
+    // Fade-in profile photo
+    const photo = document.querySelector(".hero-photo img");
+    if (photo) {
+      setTimeout(() => {
+        photo.classList.add("visible");
+      }, 300); // delay for smooth entry
     }
   });
   
